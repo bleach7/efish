@@ -1,0 +1,38 @@
+import { useLocalStorage } from "@/hooks/use-local-storage";
+import classNames from "classnames";
+import { ILangSwitcher } from "./LangSwitcher.interface";
+
+const LANGS = ["Kz", "Ru"];
+
+export const LangSwitcher = ({ className }: ILangSwitcher) => {
+  const [selectedLanguage, setSelectedLanguage] = useLocalStorage(
+    "SELECTED_LANG",
+    LANGS[1]
+  );
+
+  const handleToggleLanguage = (lang: string) => {
+    setSelectedLanguage(lang);
+  };
+
+  return (
+    <section
+      className={classNames(
+        "flex items-center gap-x-[20px] font-medium text-[#C1DFFF]",
+        className
+      )}
+    >
+      {LANGS.map((lang, i) => (
+        <button
+          key={i}
+          type="button"
+          onClick={() => handleToggleLanguage(lang)}
+          className={classNames("transition-colors duration-300 ease-in-out", {
+            ["text-[#52A5FC]"]: selectedLanguage === lang,
+          })}
+        >
+          {lang}
+        </button>
+      ))}
+    </section>
+  );
+};
