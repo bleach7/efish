@@ -1,5 +1,5 @@
-import { IIcon } from "@/interfaces";
-import { ButtonHTMLAttributes, DetailedHTMLProps, FC, ReactNode } from "react";
+// import { IIcon } from "@/interfaces";
+import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 
 export interface IButton
   extends DetailedHTMLProps<
@@ -7,8 +7,8 @@ export interface IButton
     HTMLButtonElement
   > {
   children: ReactNode;
-  size: "sm" | "md";
-  bg: "dark" | "green" | "white" | "green";
+  size: "sm" | "bg";
+  bg: "dark" | "blue" | "white" | "green";
   shadow?: "blue";
-  icon: FC<IIcon>;
+  icon?: keyof JSX.IntrinsicElements | any;
 }

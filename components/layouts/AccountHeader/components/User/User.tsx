@@ -13,7 +13,7 @@ export const User = () => {
             as="button"
             type="button"
             className={
-              "grid grid-cols-[1fr_22px] items-center gap-x-[31px] rounded-[110px] bg-[#52A5FC] py-[14px] px-[27px] text-start text-white"
+              "grid w-[240px] grid-cols-[1fr_22px] items-center gap-x-[31px] rounded-[110px] bg-[#52A5FC] py-[14px] px-[27px] text-start text-white"
             }
           >
             <span className="order-1 text-[14px] font-semibold leading-[19px]">
