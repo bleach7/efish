@@ -14,15 +14,15 @@ export const SubMenu = ({ link }: ISubMenu) => {
 
   return (
     <Menu as="div">
-      <div className="grid grid-cols-[1fr_55px] items-center">
+      <div className="group grid grid-cols-[1fr_55px] items-center">
         <Link
           href={link.path}
           className={classNames(
-            "grid grid-cols-[24px_1fr] gap-x-[15px] py-[15px] pl-[20px] pr-[15px] group-first:rounded-[10px_0_0_0]",
+            "grid grid-cols-[24px_1fr] gap-x-[15px] py-[15px] pl-[20px] pr-[15px] transition-colors duration-300 ease-in-out group-first:rounded-[10px_0_0_0]",
             {
               ["bg-[#52A5FC] text-white"]:
                 router.pathname === link.path || router.asPath === link.path,
-              ["bg-white"]:
+              ["bg-white group-hover:text-[#52A5FC]"]:
                 router.pathname !== link.path || router.asPath !== link.path,
             }
           )}
@@ -34,11 +34,11 @@ export const SubMenu = ({ link }: ISubMenu) => {
           type="button"
           onClick={() => setHeight(height === 0 ? "auto" : 0)}
           className={classNames(
-            "flex h-full w-full items-center justify-center group-first:rounded-[0_10px_0_0]",
+            "flex h-full w-full items-center justify-center transition-colors duration-300 ease-in-out group-first:rounded-[0_10px_0_0]",
             {
               ["bg-[#52A5FC] text-white"]:
                 router.pathname === link.path || router.asPath === link.path,
-              ["bg-white"]:
+              ["bg-white group-hover:text-[#52A5FC]"]:
                 router.pathname !== link.path || router.asPath !== link.path,
             }
           )}
@@ -60,12 +60,12 @@ export const SubMenu = ({ link }: ISubMenu) => {
               key={i}
               href={subLink.path}
               className={classNames(
-                "grid grid-cols-[24px_1fr] items-center gap-x-[15px] py-[15px] px-[20px] group-last:rounded-[0_0_10px_10px]",
+                "grid grid-cols-[24px_1fr] items-center gap-x-[15px] py-[15px] px-[20px] transition-colors duration-300 ease-in-out group-last:rounded-[0_0_10px_10px]",
                 {
                   ["bg-[#52A5FC] text-white"]:
                     router.pathname === subLink.path ||
                     router.asPath === subLink.path,
-                  ["bg-white"]:
+                  ["bg-white hover:text-[#52A5FC]"]:
                     router.pathname !== subLink.path ||
                     router.asPath !== subLink.path,
                 }

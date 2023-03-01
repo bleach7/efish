@@ -19,12 +19,12 @@ export const AccountSidebar = () => {
                   <Link
                     href={link.path}
                     className={classNames(
-                      "grid grid-cols-[24px_1fr] items-center gap-x-[15px] py-[15px] px-[20px] group-last:rounded-[0_0_10px_10px]",
+                      "grid grid-cols-[24px_1fr] items-center gap-x-[15px] py-[15px] px-[20px] transition-colors duration-300 ease-in-out group-last:rounded-[0_0_10px_10px]",
                       {
                         ["bg-[#52A5FC] text-white"]:
                           router.pathname === link.path ||
                           router.asPath === link.path,
-                        ["bg-white"]:
+                        ["bg-white hover:text-[#52A5FC]"]:
                           router.pathname !== link.path ||
                           router.asPath !== link.path,
                       }
