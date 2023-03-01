@@ -1,6 +1,5 @@
 import { UserIcon } from "@/assets/icons";
-import { Container, Heading } from "@/components/ui";
-import Link from "next/link";
+import { Container, Heading, Link } from "@/components/ui";
 
 export const Hero = () => {
   return (
@@ -22,10 +21,13 @@ export const Hero = () => {
           </p>
           <Link
             href="/login"
-            className="grid w-fit grid-cols-[1fr_20px] items-center gap-x-[10px] rounded-[44px] bg-[#52A5FC] py-[15px] px-[30px] font-medium text-white shadow-[0px_8px_50px_rgba(82,165,252,0.7)]"
+            appearance="button"
+            bg="blue"
+            icon={UserIcon}
+            size="bg"
+            shadow="blue"
           >
-            <span>Войти в систему</span>
-            <UserIcon className="h-auto w-full" />
+            Войти в систему
           </Link>
         </div>
       </Container>
