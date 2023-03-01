@@ -4,6 +4,8 @@ export * from "./Button";
 export * from "./Container";
 export * from "./Heading";
 export * from "./Input";
+export * from "./LandingFooter";
+export * from "./LandingHeader";
 export * from "./LangSwitcher";
 export * from "./Logo";
 export * from "./SubMenu";
