@@ -2,7 +2,7 @@ import { ADMIN_NAV_LINKS } from "@/constants";
 import classNames from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { SubMenu } from "./components";
+import { SubMenu } from "../SubMenu";
 
 export const AccountSidebar = () => {
   const router = useRouter();

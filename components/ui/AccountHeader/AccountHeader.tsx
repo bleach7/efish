@@ -1,9 +1,8 @@
 import { NotificationIcon } from "@/assets/icons";
-import { LangSwitcher, Logo } from "@/components/ui";
+import { LangSwitcher, Logo, User } from "@/components/ui";
 import classNames from "classnames";
 import Link from "next/link";
 import { IAccountHeader } from "./AccountHeader.interface";
-import { User } from "./components";
 
 export const AccountHeader = ({ className }: IAccountHeader) => {
   return (
