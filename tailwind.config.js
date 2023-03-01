@@ -12,6 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         wave: "url('/imgs/wave.png')",
+        "home-hero": "url('/imgs/home-hero.jpg')",
       },
     },
   },

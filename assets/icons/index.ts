@@ -1,4 +1,4 @@
-import { FiSettings as Settings } from "react-icons/fi";
+import { FiSettings as Settings, FiUser as UserIcon } from "react-icons/fi";
 import {
   IoIosArrowBack as ArrowLeft,
   IoIosArrowDown as ArrowDown,
@@ -16,4 +16,5 @@ export {
   ArrowDown,
   Settings,
   ExitIcon,
+  UserIcon,
 };
