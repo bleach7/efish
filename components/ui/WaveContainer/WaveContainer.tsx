@@ -9,7 +9,7 @@ export const WaveContainer = ({ className, children }: IWaveContainer) => {
         className
       )}
     >
-      <div className="z-10 flex-auto pb-[273px] pt-[43px] before:absolute before:bottom-0 before:left-0 before:w-full before:bg-wave before:bg-[length:100%_100%] before:bg-left-bottom before:bg-no-repeat before:content-[''] before:xl:h-[100px] before:2xl:h-[140px]">
+      <div className="z-10 flex-auto before:absolute before:bottom-0 before:left-0 before:w-full before:bg-wave before:bg-[length:100%_100%] before:bg-left-bottom before:bg-no-repeat before:content-[''] before:xl:h-[100px] before:2xl:h-[140px]">
         {children}
       </div>
     </div>

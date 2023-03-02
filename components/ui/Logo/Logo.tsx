@@ -30,12 +30,7 @@ export const Logo = ({ color, size, className }: ILogo) => {
       >
         Мониторинг рыб и других водных животных
       </p>
-      <p
-        className={classNames("text-[8px] leading-[11px]", {
-          ["max-w-[250px]"]: size === "sm",
-          ["max-w-[290px]"]: size === "bg",
-        })}
-      >
+      <p className="max-w-[250px] text-[8px] leading-[11px]">
         Министерство экологогии, геологии и природных ресурсов Республики
         Казахстан
       </p>

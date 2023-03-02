@@ -9,6 +9,7 @@ export * from "./LandingHeader";
 export * from "./LangSwitcher";
 export * from "./Link";
 export * from "./Logo";
+export * from "./Select";
 export * from "./SubMenu";
 export * from "./User";
 export * from "./WaveContainer";

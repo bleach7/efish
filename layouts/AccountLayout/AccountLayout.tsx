@@ -11,7 +11,7 @@ export const AccountLayout = ({ children }: IAccountLayout) => {
     <WaveContainer>
       <Container
         width="account"
-        className="grid grid-cols-[252px_1fr] gap-[35px_30px]"
+        className="grid grid-cols-[252px_1fr] gap-[35px_30px] pb-[273px] pt-[43px]"
       >
         <AccountHeader className="col-span-2" />
         <AccountSidebar />
