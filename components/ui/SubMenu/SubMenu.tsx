@@ -14,7 +14,7 @@ export const SubMenu = ({ link }: ISubMenu) => {
 
   return (
     <Menu as="div">
-      <div className="group grid grid-cols-[1fr_55px] items-center">
+      <div className="grid grid-cols-[1fr_55px] items-center">
         <Link
           href={link.path}
           className={classNames(

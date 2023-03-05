@@ -14,7 +14,7 @@ export const Container = ({
         {
           ["max-w-[1260px]"]: width === "landing",
           ["max-w-[1720px]"]: width === "account",
-          ["max-w-[485px]"]: width === "login",
+          ["max-w-[475px]"]: width === "login",
         },
         className
       )}

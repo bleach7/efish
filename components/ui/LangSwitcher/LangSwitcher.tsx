@@ -6,7 +6,11 @@ import classNames from "classnames";
 import { Fragment, useState } from "react";
 import { ILangSwitcher } from "./LangSwitcher.interface";
 
-export const LangSwitcher = ({ className, type }: ILangSwitcher) => {
+export const LangSwitcher = ({
+  className,
+  type,
+  fontWeight = "500",
+}: ILangSwitcher) => {
   const [selectedLanguage, setSelectedLanguage] = useLocalStorage(
     "SELECTED_LANG",
     LANGS[0].id
@@ -89,7 +93,11 @@ export const LangSwitcher = ({ className, type }: ILangSwitcher) => {
   return (
     <section
       className={classNames(
-        "flex items-center gap-x-[20px] font-medium text-[#C1DFFF]",
+        "flex items-center gap-x-[20px] text-[#C1DFFF]",
+        {
+          "font-medium": fontWeight === "500",
+          "font-bold": fontWeight === "700",
+        },
         className
       )}
     >

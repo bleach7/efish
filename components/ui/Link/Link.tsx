@@ -22,10 +22,11 @@ export const Link = forwardRef<HTMLAnchorElement, ILink>(
         <NextLink
           ref={ref}
           className={classNames(
-            "w-fit rounded-[44px] px-[30px] py-[15px]",
+            "w-fit rounded-[44px] px-[30px] py-[15px] transition-all duration-300 ease-in-out",
             {
-              ["shadow-[0px_8px_50px_rgba(82,165,252,0.7)]"]: shadow,
-              ["bg-[#52A5FC] text-white"]: bg === "blue",
+              ["shadow-[0px_8px_50px_rgba(82,165,252,0.7)] hover:shadow-[0px_8px_50px_rgba(90,187,94,0.7)]"]:
+                shadow,
+              ["bg-[#52A5FC] text-white hover:bg-[#5ABB5E]"]: bg === "blue",
               ["bg-[#0A091D] text-white"]: bg === "dark",
               ["bg-[#5ABB5E] text-white"]: bg === "green",
               ["bg-[#FFFFFF] text-[#0A091D]"]: bg === "white",
@@ -48,7 +49,7 @@ export const Link = forwardRef<HTMLAnchorElement, ILink>(
     }
 
     return (
-      <NextLink ref={ref} {...props}>
+      <NextLink ref={ref} className={className} {...props}>
         {children}
       </NextLink>
     );
