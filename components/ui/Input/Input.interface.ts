@@ -4,4 +4,9 @@ export interface IInput
   extends DetailedHTMLProps<
     InputHTMLAttributes<HTMLInputElement>,
     HTMLInputElement
-  > {}
+  > {
+  shadow?: boolean;
+  fHidePass?: boolean;
+  icon?: keyof JSX.IntrinsicElements | any;
+  search?: boolean;
+}

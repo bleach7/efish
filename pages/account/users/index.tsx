@@ -4,7 +4,7 @@ import { AccountLayout } from "@/layouts";
 const Users = () => {
   return (
     <AccountLayout>
-      <Heading as="h1" uppecase line size="sm" path="/">
+      <Heading as="h1" uppecase line size="sm">
         Управление пользователями
       </Heading>
     </AccountLayout>
